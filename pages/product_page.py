@@ -1,5 +1,7 @@
-from pages.base_page import BasePage
-from pages.locators import ProductPageLocators
+import pytest
+
+from .base_page import BasePage
+from .locators import ProductPageLocators
 
 
 class ProductPage(BasePage):
@@ -27,5 +29,5 @@ class ProductPage(BasePage):
 
     def should_be_message_about_adding_to_cart(self):
         message = self.browser.find_element(*ProductPageLocators.SUCCESS_MESSAGE)
-        assert self.is_not_element_present(
-            *ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but shouldn't be"
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but shouldn't be"
