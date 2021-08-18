@@ -11,7 +11,6 @@ def test_guest_can_add_product_to_basket(browser, url_parameter):
     # link = "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     # link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
     link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/{url_parameter}"
-
     product_page = ProductPage(browser, link)
     product_page.open()
     product_page.guest_can_add_to_cart()
@@ -20,3 +19,14 @@ def test_guest_can_add_product_to_basket(browser, url_parameter):
     product_page.guest_can_see_product_name()
     time.sleep(3)
     product_page.product_price_is_displayed_correctly()
+
+
+def test_guest_cant_see_success_message_after_adding_product_to_basket:
+
+
+
+def test_guest_cant_see_success_message:
+
+
+
+def test_message_disappeared_after_adding_product_to_basket:

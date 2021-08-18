@@ -22,5 +22,6 @@ class ProductPageLocators:
     PRODUCT_NAME = (By.CSS_SELECTOR, "div.product_main h1")
     PRODUCT_PRICE_IN_CART = (By.CSS_SELECTOR, ".alert-info p:first-child strong")
     PRODUCT_NAME_IN_CART = (By.CSS_SELECTOR, "#messages div.alertinner strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages div.alertinner")
 
 
